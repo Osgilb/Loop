@@ -1,3 +1,29 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+.hamburger {
+    @apply w-6 h-6
+}
+
+.hamburger-top,
+.hamburger-bottom {
+    @apply absolute w-6 h-[2px] bg-black transition-all left-0 top-0
+}
+
+.hamburger-bottom {
+    @apply translate-y-2
+}
+
+.open {
+    @apply rotate-90 transition-all
+}
+
+.open .hamburger-top {
+    @apply translate-y-2 rotate-45
+}
+
+.open .hamburger-bottom {
+    @apply translate-y-2 -rotate-45
+}

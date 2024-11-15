@@ -3,45 +3,47 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://unpkg.com/@phosphor-icons/web"></script>
         <link rel="stylesheet" href="./css/style.css">
         <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
+        <script src="./script.js" defer></script>
         <title>Loop Studios</title>
     </head>
 
     <body>
-        <nav class="bg-zinc-50/[0.99] fixed left-0 right-0 top-0 px-4 z-30">
-            <div class="max-w-7xl mx-auto h-11 flex justify-between items-center">
+        <nav class="bg-white fixed left-0 right-0 top-0 px-4 z-30">
+            <div class="max-w-7xl mx-auto h-11 flex justify-between items-center peer relative z-20">
                 <div>
                     <svg class="h-4" height="383" viewBox="0 0 609 383" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M609 231.26C609 313.133 538.969 382.877 456.872 382.877C439.626 382.936 422.498 380.034 406.241 374.298C389.338 368.273 376.79 358.32 362.189 348.614C360.212 347.318 358.197 346.022 356.156 344.882C340.551 335.817 322.812 331.041 304.751 331.041C286.689 331.041 268.95 335.817 253.346 344.882C223.037 362.545 200.114 380.545 163.629 382.722C125.363 385.015 86.473 373.08 56.6715 348.899C9.1868 310.373 -7.41723 245.735 2.97168 187.161C14.7778 120.644 60.4422 71.6076 119.642 41.5821C141.3 30.743 164.011 22.1369 187.424 15.8978C316.953 -19.3889 505.202 -1.25958 581.188 124.635C591.665 142.1 599.606 160.957 604.774 180.643C607.593 197.368 609.007 214.299 609 231.26Z" fill="#CCCCCC" />
                     </svg>
                 </div>
-                <div>
-                    <ul class="space-x-8 text-[14px] text-zinc-800 hidden xl:block font-medium">
-                        <a href="" class="inline-block hover:text-zinc-500">
-                            <li>About</li>
-                        </a>
-                        <a href="" class="inline-block hover:text-zinc-500">
-                            <li>Careers</li>
-                        </a>
-                        <a href="" class="inline-block hover:text-zinc-500">
-                            <li>Events</li>
-                        </a>
-                        <a href="" class="inline-block hover:text-zinc-500">
-                            <li>Products</li>
-                        </a>
-                        <a href="" class="inline-block hover:text-zinc-500">
-                            <li>Support</li>
-                        </a>
+                <div class="hidden xl:block">
+                    <ul class="flex gap-6 text-[15px] text-zinc-800">
+                        <li class="hover:text-zinc-500"><a href="#">About</a></li>
+                        <li class="hover:text-zinc-500"><a href="#">Careers</a></li>
+                        <li class="hover:text-zinc-500"><a href="#">Events</a></li>
+                        <li class="hover:text-zinc-500"><a href="#">Products</a></li>
+                        <li class="hover:text-zinc-500"><a href="#">Support</a></li>
                     </ul>
-                    <a href="#" class="xl:hidden">
-                        <svg class="fill-zinc-600" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#000000" viewBox="0 0 256 256">
-                            <path d="M224,128a8,8,0,0,1-8,8H40a8,8,0,0,1,0-16H216A8,8,0,0,1,224,128ZM40,72H216a8,8,0,0,0,0-16H40a8,8,0,0,0,0,16ZM216,184H40a8,8,0,0,0,0,16H216a8,8,0,0,0,0-16Z"></path>
-                        </svg>
-                    </a>
+                </div>
+                <div class="hamburger relative xl:hidden">
+                    <span class="hamburger-top">&nbsp;</span>
+                    <span class="hamburger-bottom">&nbsp;</span>
                 </div>
             </div>
         </nav>
+        <div class="fixed z-30 left-0 right-0 top-11 bg-white/[.3] h-screen backdrop-blur-xl xl:hidden">
+            <div class="bg-white shadow-xl shadow-white overflow-hidden">
+                <ul class="flex flex-col text-3xl text-zinc-500 tracking-tighter font-semibold gap-4 py-6 px-4 xl:px-0 max-w-7xl mx-auto">
+                    <li class="hover:text-zinc-500"><a href="#">About</a></li>
+                    <li class="hover:text-zinc-500"><a href="#">Careers</a></li>
+                    <li class="hover:text-zinc-500"><a href="#">Events</a></li>
+                    <li class="hover:text-zinc-500"><a href="#">Products</a></li>
+                    <li class="hover:text-zinc-500"><a href="#">Support</a></li>
+                </ul>
+            </div>
+        </div>
         <header>
             <div class="xl:h-screen bg-zinc-100 mt-11 flex flex-col justify-between">
                 <div class="text-center pt-16 space-y-3 md:space-y-6">
@@ -157,5 +159,8 @@
                 </div>
             </div>
         </footer>
+        <div class="min-h-screen bg-gray-50">
+
+        </div>
     </body>
 </html>
