@@ -3,7 +3,7 @@
 ![Thumbnail](/thumbnail/loop.s.png)
 
 ## Introduction
-**Loop Studios** Loopstudios is a brand that delivers world-class virtual reality experiences, transforming businesses through award-winning digital solutions that seamlessly connect with their audiences and elevate their brands.
+**Loop Studios** is a brand that delivers world-class virtual reality experiences, transforming businesses through award-winning digital solutions that seamlessly connect with their audiences and elevate their brands.
 
 ## Possible Improvemnts
 - Make the Hamburger menu work smoothly on mobile.
