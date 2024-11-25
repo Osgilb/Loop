@@ -27,14 +27,14 @@
                         <li class="hover:text-zinc-500"><a href="#">Support</a></li>
                     </ul>
                 </div>
-                <div class="hamburger relative xl:hidden">
+                <div id="hamburger" class="hamburger xl:hidden overflow-hidden">
                     <span class="hamburger-top">&nbsp;</span>
                     <span class="hamburger-bottom">&nbsp;</span>
                 </div>
             </div>
         </nav>
-        <div class="fixed z-30 left-0 right-0 top-11 bg-white/[.3] h-screen backdrop-blur-xl xl:hidden">
-            <div class="bg-white shadow-xl shadow-white overflow-hidden">
+        <div id="backdrop" class="fixed z-30 left-0 right-0 top-11 bg-white/[.3] transition-all duration-700 overflow-hidden backdrop-blur-xl xl:hidden">
+            <div id="menu" class="bg-white shadow-xl shadow-white h-0 transition-all duration-700 overflow-hidden px-10">
                 <ul class="flex flex-col text-3xl text-zinc-500 tracking-tighter font-semibold gap-4 py-6 px-4 xl:px-0 max-w-7xl mx-auto">
                     <li class="hover:text-zinc-500"><a href="#">About</a></li>
                     <li class="hover:text-zinc-500"><a href="#">Careers</a></li>
